@@ -1,0 +1,590 @@
+Name:         blue-8475cbdf46-78hcp
+Namespace:    udacity
+Priority:     0
+Node:         ip-10-100-1-108.us-east-2.compute.internal/10.100.1.108
+Start Time:   Mon, 06 Jun 2022 13:09:39 +0000
+Labels:       app=blue
+              pod-template-hash=8475cbdf46
+Annotations:  kubernetes.io/psp: eks.privileged
+Status:       Running
+IP:           10.100.1.6
+IPs:
+  IP:           10.100.1.6
+Controlled By:  ReplicaSet/blue-8475cbdf46
+Containers:
+  nginx:
+    Container ID:   docker://18b4f6868986c565513c892bdff038dd1355f5ac929584a0c718522e94d15c0a
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:2bcabc23b45489fb0885d69a06ba1d648aeda973fae7bb981bafbb884165e514
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 06 Jun 2022 13:09:55 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /usr/share/nginx/html from configmap-vol (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-cps94 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  configmap-vol:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      blue-config
+    Optional:  false
+  kube-api-access-cps94:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  58m   default-scheduler  Successfully assigned udacity/blue-8475cbdf46-78hcp to ip-10-100-1-108.us-east-2.compute.internal
+  Normal  Pulling    58m   kubelet            Pulling image "nginx"
+  Normal  Pulled     58m   kubelet            Successfully pulled image "nginx" in 7.531135578s
+  Normal  Created    58m   kubelet            Created container nginx
+  Normal  Started    58m   kubelet            Started container nginx
+
+
+Name:         blue-8475cbdf46-cpfmc
+Namespace:    udacity
+Priority:     0
+Node:         ip-10-100-3-57.us-east-2.compute.internal/10.100.3.57
+Start Time:   Mon, 06 Jun 2022 13:09:39 +0000
+Labels:       app=blue
+              pod-template-hash=8475cbdf46
+Annotations:  kubernetes.io/psp: eks.privileged
+Status:       Running
+IP:           10.100.3.112
+IPs:
+  IP:           10.100.3.112
+Controlled By:  ReplicaSet/blue-8475cbdf46
+Containers:
+  nginx:
+    Container ID:   docker://2421fd1644a3f8de2a4905f79b5ba53bb9ba80699123feb823ac3c8dee001072
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:2bcabc23b45489fb0885d69a06ba1d648aeda973fae7bb981bafbb884165e514
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 06 Jun 2022 13:09:44 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /usr/share/nginx/html from configmap-vol (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-6qk5m (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  configmap-vol:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      blue-config
+    Optional:  false
+  kube-api-access-6qk5m:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  58m   default-scheduler  Successfully assigned udacity/blue-8475cbdf46-cpfmc to ip-10-100-3-57.us-east-2.compute.internal
+  Normal  Pulling    58m   kubelet            Pulling image "nginx"
+  Normal  Pulled     58m   kubelet            Successfully pulled image "nginx" in 2.855561815s
+  Normal  Created    58m   kubelet            Created container nginx
+  Normal  Started    58m   kubelet            Started container nginx
+
+
+Name:         blue-8475cbdf46-jvrhh
+Namespace:    udacity
+Priority:     0
+Node:         ip-10-100-1-108.us-east-2.compute.internal/10.100.1.108
+Start Time:   Mon, 06 Jun 2022 13:09:39 +0000
+Labels:       app=blue
+              pod-template-hash=8475cbdf46
+Annotations:  kubernetes.io/psp: eks.privileged
+Status:       Running
+IP:           10.100.1.98
+IPs:
+  IP:           10.100.1.98
+Controlled By:  ReplicaSet/blue-8475cbdf46
+Containers:
+  nginx:
+    Container ID:   docker://1597a3c476cd2949328113a540d76f31153a4a7add3442f5787b32fe15cec354
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:2bcabc23b45489fb0885d69a06ba1d648aeda973fae7bb981bafbb884165e514
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 06 Jun 2022 13:09:55 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /usr/share/nginx/html from configmap-vol (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-lpxvg (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  configmap-vol:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      blue-config
+    Optional:  false
+  kube-api-access-lpxvg:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  58m   default-scheduler  Successfully assigned udacity/blue-8475cbdf46-jvrhh to ip-10-100-1-108.us-east-2.compute.internal
+  Normal  Pulling    58m   kubelet            Pulling image "nginx"
+  Normal  Pulled     58m   kubelet            Successfully pulled image "nginx" in 7.498291012s
+  Normal  Created    58m   kubelet            Created container nginx
+  Normal  Started    58m   kubelet            Started container nginx
+
+
+Name:         canary-v1-64598c676f-2bqv6
+Namespace:    udacity
+Priority:     0
+Node:         ip-10-100-3-57.us-east-2.compute.internal/10.100.3.57
+Start Time:   Mon, 06 Jun 2022 13:09:37 +0000
+Labels:       app=canary
+              pod-template-hash=64598c676f
+              version=1.0
+Annotations:  kubernetes.io/psp: eks.privileged
+Status:       Running
+IP:           10.100.3.93
+IPs:
+  IP:           10.100.3.93
+Controlled By:  ReplicaSet/canary-v1-64598c676f
+Containers:
+  nginx:
+    Container ID:   docker://28f78ef27b1e0c4b3c4bd97223ef50a0ed950c4f9833000bbe80ae093a6cc218
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:2bcabc23b45489fb0885d69a06ba1d648aeda973fae7bb981bafbb884165e514
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 06 Jun 2022 13:09:44 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /usr/share/nginx/html from configmap-vol (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-td9x8 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  configmap-vol:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      canary-config-v1
+    Optional:  false
+  kube-api-access-td9x8:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  58m   default-scheduler  Successfully assigned udacity/canary-v1-64598c676f-2bqv6 to ip-10-100-3-57.us-east-2.compute.internal
+  Normal  Pulling    58m   kubelet            Pulling image "nginx"
+  Normal  Pulled     58m   kubelet            Successfully pulled image "nginx" in 4.9332243s
+  Normal  Created    58m   kubelet            Created container nginx
+  Normal  Started    58m   kubelet            Started container nginx
+
+
+Name:         canary-v1-64598c676f-2gmsk
+Namespace:    udacity
+Priority:     0
+Node:         ip-10-100-3-57.us-east-2.compute.internal/10.100.3.57
+Start Time:   Mon, 06 Jun 2022 13:09:37 +0000
+Labels:       app=canary
+              pod-template-hash=64598c676f
+              version=1.0
+Annotations:  kubernetes.io/psp: eks.privileged
+Status:       Running
+IP:           10.100.3.196
+IPs:
+  IP:           10.100.3.196
+Controlled By:  ReplicaSet/canary-v1-64598c676f
+Containers:
+  nginx:
+    Container ID:   docker://96af3e4c2e20e66dca1d5c8ac9d2ed14729ffe1baf04707018c69d849b74990f
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:2bcabc23b45489fb0885d69a06ba1d648aeda973fae7bb981bafbb884165e514
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 06 Jun 2022 13:09:44 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /usr/share/nginx/html from configmap-vol (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-fjjp4 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  configmap-vol:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      canary-config-v1
+    Optional:  false
+  kube-api-access-fjjp4:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  58m   default-scheduler  Successfully assigned udacity/canary-v1-64598c676f-2gmsk to ip-10-100-3-57.us-east-2.compute.internal
+  Normal  Pulling    58m   kubelet            Pulling image "nginx"
+  Normal  Pulled     58m   kubelet            Successfully pulled image "nginx" in 4.733116582s
+  Normal  Created    58m   kubelet            Created container nginx
+  Normal  Started    58m   kubelet            Started container nginx
+
+
+Name:         canary-v1-64598c676f-7928q
+Namespace:    udacity
+Priority:     0
+Node:         ip-10-100-1-108.us-east-2.compute.internal/10.100.1.108
+Start Time:   Mon, 06 Jun 2022 13:09:37 +0000
+Labels:       app=canary
+              pod-template-hash=64598c676f
+              version=1.0
+Annotations:  kubernetes.io/psp: eks.privileged
+Status:       Running
+IP:           10.100.1.95
+IPs:
+  IP:           10.100.1.95
+Controlled By:  ReplicaSet/canary-v1-64598c676f
+Containers:
+  nginx:
+    Container ID:   docker://0e08b4fa78ea1afe1f690f2c7d8e9748724c4a4f7f934431f853f61a9522a0e3
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:2bcabc23b45489fb0885d69a06ba1d648aeda973fae7bb981bafbb884165e514
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 06 Jun 2022 13:09:55 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /usr/share/nginx/html from configmap-vol (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-s82n4 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  configmap-vol:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      canary-config-v1
+    Optional:  false
+  kube-api-access-s82n4:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  58m   default-scheduler  Successfully assigned udacity/canary-v1-64598c676f-7928q to ip-10-100-1-108.us-east-2.compute.internal
+  Normal  Pulling    58m   kubelet            Pulling image "nginx"
+  Normal  Pulled     58m   kubelet            Successfully pulled image "nginx" in 7.353961472s
+  Normal  Created    58m   kubelet            Created container nginx
+  Normal  Started    58m   kubelet            Started container nginx
+
+
+Name:         canary-v2-5dc9c56687-dzfgv
+Namespace:    udacity
+Priority:     0
+Node:         ip-10-100-1-108.us-east-2.compute.internal/10.100.1.108
+Start Time:   Mon, 06 Jun 2022 13:51:46 +0000
+Labels:       app=canary
+              pod-template-hash=5dc9c56687
+              version=2.0
+Annotations:  kubernetes.io/psp: eks.privileged
+Status:       Running
+IP:           10.100.1.165
+IPs:
+  IP:           10.100.1.165
+Controlled By:  ReplicaSet/canary-v2-5dc9c56687
+Containers:
+  nginx:
+    Container ID:   docker://1def1ddae8ed430e7d8459aaf021af963a4962e78e02eb78190604a75da509ce
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:2bcabc23b45489fb0885d69a06ba1d648aeda973fae7bb981bafbb884165e514
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 06 Jun 2022 13:51:47 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /usr/share/nginx/html from configmap-vol (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-kdcks (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  configmap-vol:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      canary-config-v2
+    Optional:  false
+  kube-api-access-kdcks:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  16m   default-scheduler  Successfully assigned udacity/canary-v2-5dc9c56687-dzfgv to ip-10-100-1-108.us-east-2.compute.internal
+  Normal  Pulling    16m   kubelet            Pulling image "nginx"
+  Normal  Pulled     16m   kubelet            Successfully pulled image "nginx" in 261.060665ms
+  Normal  Created    16m   kubelet            Created container nginx
+  Normal  Started    16m   kubelet            Started container nginx
+
+
+Name:         canary-v2-5dc9c56687-hggtb
+Namespace:    udacity
+Priority:     0
+Node:         ip-10-100-3-57.us-east-2.compute.internal/10.100.3.57
+Start Time:   Mon, 06 Jun 2022 13:51:46 +0000
+Labels:       app=canary
+              pod-template-hash=5dc9c56687
+              version=2.0
+Annotations:  kubernetes.io/psp: eks.privileged
+Status:       Running
+IP:           10.100.3.148
+IPs:
+  IP:           10.100.3.148
+Controlled By:  ReplicaSet/canary-v2-5dc9c56687
+Containers:
+  nginx:
+    Container ID:   docker://b85cfb36bcd2df76f8381ab333838ef3a04470a1f70d805c29376f6e3e149a49
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:2bcabc23b45489fb0885d69a06ba1d648aeda973fae7bb981bafbb884165e514
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 06 Jun 2022 13:51:47 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /usr/share/nginx/html from configmap-vol (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-brbhd (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  configmap-vol:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      canary-config-v2
+    Optional:  false
+  kube-api-access-brbhd:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  16m   default-scheduler  Successfully assigned udacity/canary-v2-5dc9c56687-hggtb to ip-10-100-3-57.us-east-2.compute.internal
+  Normal  Pulling    16m   kubelet            Pulling image "nginx"
+  Normal  Pulled     16m   kubelet            Successfully pulled image "nginx" in 249.499681ms
+  Normal  Created    16m   kubelet            Created container nginx
+  Normal  Started    16m   kubelet            Started container nginx
+
+
+Name:         canary-v2-5dc9c56687-rtxh2
+Namespace:    udacity
+Priority:     0
+Node:         ip-10-100-3-57.us-east-2.compute.internal/10.100.3.57
+Start Time:   Mon, 06 Jun 2022 13:51:46 +0000
+Labels:       app=canary
+              pod-template-hash=5dc9c56687
+              version=2.0
+Annotations:  kubernetes.io/psp: eks.privileged
+Status:       Running
+IP:           10.100.3.34
+IPs:
+  IP:           10.100.3.34
+Controlled By:  ReplicaSet/canary-v2-5dc9c56687
+Containers:
+  nginx:
+    Container ID:   docker://bffffda68ecd3a294d6d3ad0163e23b4cbdde810fa36c2c1641e4f7f2a55997c
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:2bcabc23b45489fb0885d69a06ba1d648aeda973fae7bb981bafbb884165e514
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 06 Jun 2022 13:51:47 +0000
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /usr/share/nginx/html from configmap-vol (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-gtn4j (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  configmap-vol:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      canary-config-v2
+    Optional:  false
+  kube-api-access-gtn4j:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  16m   default-scheduler  Successfully assigned udacity/canary-v2-5dc9c56687-rtxh2 to ip-10-100-3-57.us-east-2.compute.internal
+  Normal  Pulling    16m   kubelet            Pulling image "nginx"
+  Normal  Pulled     16m   kubelet            Successfully pulled image "nginx" in 314.978291ms
+  Normal  Created    16m   kubelet            Created container nginx
+  Normal  Started    16m   kubelet            Started container nginx
+
+
+Name:         hello-world-794458d64d-gjcn5
+Namespace:    udacity
+Priority:     0
+Node:         ip-10-100-1-108.us-east-2.compute.internal/10.100.1.108
+Start Time:   Mon, 06 Jun 2022 13:09:35 +0000
+Labels:       app=hello-world
+              pod-template-hash=794458d64d
+Annotations:  kubernetes.io/psp: eks.privileged
+Status:       Running
+IP:           10.100.1.89
+IPs:
+  IP:           10.100.1.89
+Controlled By:  ReplicaSet/hello-world-794458d64d
+Containers:
+  hello-world:
+    Container ID:   docker://d2316df5bdc7ad6874be6e7e498d132f814456b5e8fe3aa108b3c088a2c325bb
+    Image:          etapau/hello-world:udacity
+    Image ID:       docker-pullable://etapau/hello-world@sha256:b158d96c3f9ff8311acbff1c16b38ee39acf4c68a8ca0b3ea25d7064d24ef0bd
+    Port:           9000/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 06 Jun 2022 13:10:01 +0000
+    Ready:          True
+    Restart Count:  0
+    Liveness:       http-get http://:9000/healthz delay=2s timeout=1s period=2s #success=1 #failure=3
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-t5k6l (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-t5k6l:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  58m   default-scheduler  Successfully assigned udacity/hello-world-794458d64d-gjcn5 to ip-10-100-1-108.us-east-2.compute.internal
+  Normal  Pulling    58m   kubelet            Pulling image "etapau/hello-world:udacity"
+  Normal  Pulled     58m   kubelet            Successfully pulled image "etapau/hello-world:udacity" in 23.865827584s
+  Normal  Created    58m   kubelet            Created container hello-world
+  Normal  Started    58m   kubelet            Started container hello-world
