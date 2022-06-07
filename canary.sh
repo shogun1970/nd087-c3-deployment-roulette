@@ -31,6 +31,7 @@ function display_current_deployment_status {
 }
 
 function initialize_deployment {
+  kubectl apply -f $CANARY_APP_DIR/index_v2_html.yml
   kubectl apply -f $CANARY_APP_DIR/canary-v2.yml
   sleep 1
 }
