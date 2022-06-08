@@ -10,4 +10,4 @@ Troubleshooting steps for Hello World app:
      - log show that failed health check you want to ping /healthz, indicating a fault health check path
 2. corrected the health check path in app/hello-world/hello.yml
 3. redeploy the hello-world application using command "kubectl apply -f starter/apps/hello-world/hello.yml"
-4. then run the log command again, see screenshot 
+4. then run the log command again, see screenshot "p3_sc_tf_infra_success.png"
